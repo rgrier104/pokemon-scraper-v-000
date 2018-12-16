@@ -11,7 +11,7 @@ attr_accessor :id, :name, :type, :db
 
   def self.save(name, type, db)
     @db.execute("INSERT INTO pokemon (id, name, type) VALUES (?,?,?)", @id, name, type)
-    
+
   end
 
 end
