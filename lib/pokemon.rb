@@ -19,5 +19,7 @@ attr_accessor :id, :name, :type, :db
     new_pokemon
   end
 
+  def alter_hp(id,hp,db)
+    db.execute("UPDATE pokemon SET hp = ? WHERE id = ?",hp,id)
 
 end
